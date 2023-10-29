@@ -1,0 +1,128 @@
+body{
+  height: 100vh;
+  background-color: #eac531;
+  font-family: 'Roboto', sans-serif;
+}
+
+.blog{
+  height: 100%;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* https://www.antoniofullone.com/blog/horizontal-smooth-scrolling-css */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.blog .post-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* https://www.antoniofullone.com/blog/horizontal-smooth-scrolling-css */
+  scroll-snap-align: start;
+}
+
+.blog .post-content{
+  min-width: 60vw;
+  min-height: 80vh;
+  margin: 10vh 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 24px;
+  background-color: white;
+  box-shadow: 4px 8px 30px 0px rgba(70,70,70,0.3);
+}
+
+.blog .post-featured-image{
+  height: 100%;
+  width: 50%;
+}
+
+.blog .post-featured-image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px 0 0 24px;
+}
+
+.blog .post-details{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.blog .post-details p{
+  margin: 1rem;  
+}
+
+.single .post-container{
+  padding: 10vh 0;
+}
+.single .post-content{
+  margin: 0 20vw;
+  max-width: 60vw;
+  box-sizing: content-box;
+  border-radius: 24px;
+  background-color: white;
+  box-shadow: 4px 8px 30px 0px rgba(70,70,70,0.3);
+}
+
+.single figure{
+  width: 100% !important;
+  margin: 0;
+  text-align: center;
+}
+
+.single figcaption{
+  margin: 1.2rem 0;
+  font-style: italic;
+}
+
+.single img{
+  height: 100%;
+  max-width: 100% !important;
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px #a9a9a9;
+}
+
+.single video{
+  height: 100%;
+  width: 100% !important;
+}
+
+.top, .title, .content, .bottom {
+  margin: 0 2rem;
+}
+
+.date {
+  margin: 0 0 0 2rem;
+  font-style: italic;
+}
+
+.top {
+  padding-top: 1rem;
+}
+
+.bottom {
+  padding-bottom: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+}
+pre {
+  overflow: scroll;
+  background-color: lightblue;
+  padding: .4rem;
+}
+
+code {
+  font-family: Ubuntu Mono, monospace, sans-serif;
+}
